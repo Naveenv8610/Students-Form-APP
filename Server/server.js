@@ -14,6 +14,8 @@ app.use("/api/create", authRoutes);
 app.use("/api/signin", authRoutes);
 app.use("/api/addStudent", authRoutes);
 app.use("/api/get", authRoutes);
+app.use("/api/edit", authRoutes);
+app.use("/api/delete", authRoutes)
 
 mongoose
   .connect(MONGO_URL)
